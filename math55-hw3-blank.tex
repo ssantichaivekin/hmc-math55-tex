@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+
+\newcommand{\cmp}[1]{\overline{#1}}
+
+\begin{document}
+
+\begin{flushright}
+	Name: \underline{\hspace{3cm}} \\
+	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Homework 3 \\
+	Due Tuesday 2/5
+\end{flushright}
+
+\begin{framed}
+    \textbf{12.22} Let $A$ be a set. The complement of $A$, denoted $A$, is the set of all objects that are not in $A$. STOP! 
+    This definition needs some amending. Taken literally, the complement of the set $\{1, 2, 3\}$ 
+    includes the number 􏰏5, the ordered pair (3, 4), and the sun, moon, and stars! After all, it says “. . . all objects that are not in A.” 
+    This is not what is intended.
+
+    When mathematicians speak of set complements, they usually have some overarching set in mind. 
+    For example, during a given proof or discussion about the integers, if $A$ is a set containing just integers, 
+    $A$ stands for the set containing all integers not in $A$.
+
+    If $U$ (for “universe”) is the set of all objects under consideration and $A\subseteq􏰁 U$ , then the complement of $A$ is the set of 
+    all objects in $U$ that are not in $A$. In other words, $\cmp{A} = U 􏰏- A$. Thus $\cmp{\emptyset} = U$.
+
+    Prove the following about set complements. Here the letters $A$, $B$, and $C$ denote subsets of a universe set $U$.\\
+
+    \indent \textbf{a.} $A=B$ if and only if $\cmp{A} = \cmp{B}$.\\
+    \indent \textbf{b.} $\cmp{\cmp{A}} = A$.\\
+    \indent \textbf{c.} $\cmp{A \cup B \cup C} = \cmp{A} \cap \cmp{B} \cap \cmp{C}$.\\
+
+    The notation $\cmp{A}$ is handy, but it can be ambiguous. 
+    Unless it is perfectly clear what the “universe” set $U$ should be, 
+    it is better to use the set difference notation rather than complement notation.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{13.1} Give an alternative proof of Proposition 13.1 in which you use list counting instead of subset counting.\\
+
+    Proposition 13.1: Let $n$ be a positive integer. Then
+    $$
+    2^0+2^1+...+2^{-1} = 2^n-1
+    $$
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{13.3} Substituting $x = 3$ into your expression in the previous problem yields
+    $$
+    2\times3^0+2\times3^1+2\times3^2+...+2\times3^{n-1} = 3^n-1
+    $$
+    Prove this equation combinatorially.
+    Next, substitute $x = 10$ and illustrate the result using ordinary base-10 numbers.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{13.5} Let $n$ be a positive integer. Give a combinatorial proof that $n^2 = n(n-1)+n$.
+\end{framed}
+
+\end{document}
