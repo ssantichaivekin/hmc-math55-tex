@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{flushright}
+	Name: \underline{\hspace{3cm}} \\
+	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Homework 4 \\
+	Due Thu 2/7
+\end{flushright}
+
+\begin{framed}
+    \textbf{17.16} Consider the following formula:
+    $$
+    k \binom{n}{k} = n\binom{n-1}{k-1}
+    $$
+    Give two different proofs. One proof should use the factorial formula for $\binom{n}{k}$ 
+    (Theorem 17.12). The other proof should e combinatorial; develop a question that both sides of
+    the equation answer.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{17.19} Let $n$ be natural number. Give a combinatorial proof of the following:
+    $$
+    \binom{2n+2}{n+1} = \binom{2n}{n+1} + 2\binom{2n}{n} + \binom{2n}{n-1}
+    $$
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{17.21} Use Stirling's formula (see Exercise 9.7) to develop an approximation formula for 
+    $\binom{2n}{n}$.\\
+    Without using Stirling's formula, give a direct proof that $\binom{2n}{n} \leq 4^n$.\\
+
+    Reference from Exercise 9.7: The Scottish mathematician James Stirling found an approximation formula for $n!$.
+    Stirling’s formula is
+    $$
+        n! \approx \sqrt{2\pi n} n^n e^{-n}
+    $$
+    where $\pi = 3.13159...$ and $e = 2.71828...$. (Scientific calculators have a key that computes $e^x$;
+    this key might be labeled ``exp x''.)
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{17.26} Prove: $\binom{n}{0}\binom{n}{n} + \binom{n}{1}\binom{n}{n-1} +
+    \binom{n}{2}\binom{n}{n-2} + ... + \binom{n}{n-1}\binom{n}{1} + \binom{n}{n}\binom{n}{0} = \binom{2n}{n}$.
+\end{framed}
+
+\end{document}

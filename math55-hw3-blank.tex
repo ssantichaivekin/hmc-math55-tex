@@ -14,9 +14,9 @@
 \end{flushright}
 
 \begin{framed}
-    \textbf{12.22} Let $A$ be a set. The complement of $A$, denoted $A$, is the set of all objects that are not in $A$. STOP! 
+    \textbf{12.22} Let $A$ be a set. The complement of $A$, denoted $\cmp{A}$, is the set of all objects that are not in $A$. STOP! 
     This definition needs some amending. Taken literally, the complement of the set $\{1, 2, 3\}$ 
-    includes the number 􏰏5, the ordered pair (3, 4), and the sun, moon, and stars! After all, it says “. . . all objects that are not in A.” 
+    includes the number 􏰏$-5$, the ordered pair (3, 4), and the sun, moon, and stars! After all, it says “. . . all objects that are not in A.” 
     This is not what is intended.
 
     When mathematicians speak of set complements, they usually have some overarching set in mind. 
@@ -44,7 +44,7 @@
 
     Proposition 13.1: Let $n$ be a positive integer. Then
     $$
-    2^0+2^1+...+2^{-1} = 2^n-1
+    2^0+2^1+...+2^{n-1} = 2^{n}-1
     $$
 \end{framed}
 
@@ -56,7 +56,12 @@
     2\times3^0+2\times3^1+2\times3^2+...+2\times3^{n-1} = 3^n-1
     $$
     Prove this equation combinatorially.
-    Next, substitute $x = 10$ and illustrate the result using ordinary base-10 numbers.
+    Next, substitute $x = 10$ and illustrate the result using ordinary base-10 numbers.\\
+
+    \noindent For reference, the expression that is being referred to is
+    $
+    (x-1)(1+x+x^2+...+x^{n-1})
+    $.
 \end{framed}
 
 \pagebreak
