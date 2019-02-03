@@ -6,8 +6,8 @@
 \begin{document}
 
 \begin{flushright}
-	Name: \underline{\hspace{3cm}} \\
-	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Name: Santi Santichaivekin \\
+	MATH55 Section 3 \\
 	Homework 4 \\
 	Due Thu 2/7
 \end{flushright}
@@ -18,9 +18,17 @@
     k \binom{n}{k} = n\binom{n-1}{k-1}
     $$
     Give two different proofs. One proof should use the factorial formula for $\binom{n}{k}$ 
-    (Theorem 17.12). The other proof should e combinatorial; develop a question that both sides of
+    (Theorem 17.12). The other proof should be combinatorial; develop a question that both sides of
     the equation answer.
 \end{framed}
+
+Factorial formula proof:
+\begin{align*}
+    k\binom{n}{k} &= k(\frac{n!}{k!(n-k)!})  && \text{: via factorial formula}\\
+                  &= \frac{n(n-1)!}{(k-1)!(n-k)!}\\
+                  &= \frac{n(n-1)!}{(k-1)!((n-1)-(k-1))!}\\
+                  &= n\binom{n-1}{k-1} &&\text{: via factorial formula}\\ 
+\end{align*}
 
 \pagebreak
 
