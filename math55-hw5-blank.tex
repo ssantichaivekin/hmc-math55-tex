@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{amsmath}
+
+\def\multichoose#1#2{ \left(\kern-.4em\binom{#1}{#2}\kern-.4em\right) }
+
+\begin{document}
+
+\begin{flushright}
+	Name: \underline{\hspace{3cm}} \\
+	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Homework 5 \\
+	Due Tue. 2/12
+\end{flushright}
+
+\begin{framed}
+    \textbf{17.33} A poker hand consists of 5 cards chosen from a standard deck of 52 cards.
+    There are a variety of special hands that one can be dealt in poker. For
+    each of the following types of hands, count the number of hands that have that type.\\
+
+    \indent \textbf{a.} Four of a kind: The hand contains four cards of the same numerical value (e.g., four
+    jacks) and another card.\\
+    \indent \textbf{b.} Three of a kind: The hand contains three cards of the same numerical value and two
+    other cards with two other numerical values.\\
+    \indent \textbf{c.} Flush: The hand contains five cards all of the same suit.\\
+    \indent \textbf{d.} Full house: The hand contains three cards of one value and two cards of another value.\\
+    \indent \textbf{e.} Straight: The five cards have consecutive numerical values, such as 7-8-9-10-jack.
+    Treat ace as being higher than king but not less than 2. The suits are irrelevant.\\
+    \indent \textbf{f.} Straight flush: The hand is both a straight and a flush.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{18.13} Prove:
+    $$
+        \multichoose{n}{k} = \multichoose{k+1}{n-1}.
+    $$
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{18.15} Let $n, k$ be positive integers, prove:
+    $$
+    \multichoose{n}{k} = \multichoose{n-1}{0} + \multichoose{n-1}{1}
+    + \multichoose{n-1}{2} + ...  + \multichoose{n-1}{k}
+    $$
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{18.16} Let $n,k$ be positive integers, prove:
+    $$
+    \multichoose{n}{k} = \multichoose{1}{k-1} + \multichoose{2}{k-1}
+    +  ...  + \multichoose{n}{k-1}
+    $$
+\end{framed}
+
+\end{document}
