@@ -3,7 +3,9 @@
 \usepackage{framed}
 \usepackage{amsmath}
 
-\def\multichoose#1#2{ \left(\kern-.4em\binom{#1}{#2}\kern-.4em\right) }
+\def\multichooseA#1#2{\left(\kern-.3em\binom{#1}{#2}\kern-.3em\right)}
+\def\multichooseB#1#2{\big(\kern-.3em\binom{#1}{#2}\kern-.3em\big)}
+\newcommand{\multichoose}[2]{\mathchoice{\multichooseA{#1}{#2}}{\multichooseB{#1}{#2}}{\multichooseA{#1}{#2}}{\multichooseA{#1}{#2}}}
 
 \begin{document}
 
