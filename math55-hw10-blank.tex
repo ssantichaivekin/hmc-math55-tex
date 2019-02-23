@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{flushright}
+	Name: \underline{\hspace{3cm}} \\
+	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Homework 10 \\
+	Due Thu. 2/28
+\end{flushright}
+
+% Dividing and Greatest Common Divisors
+% 35.6, 36.2, 36.14, 36.15.
+
+\begin{framed}
+	\textbf{35.6} Explain why Theorem 35.1 does not make sense with $b = 0$ or with $b < 0$.
+
+	\noindent The case $b = 0$ is hopeless. Develop (and prove) an alternative to Theorem 35.1
+	that allows $b < 0$.\\
+
+	\noindent Theorem 35.1: (Division) Let $a, b \in Z$ with $b > 0$. 
+	There exist integers $q$ and $r$ such that 
+	$$
+		a = qb + r \text{\hspace{1em}and\hspace{1em}} 0 \leq r < b.
+	$$
+	Moreover, there is only one such pair of integers $(q,r)$ that satisfies these conditions.
+	The integer $q$ is called the quotient and the integer $r$ is called the remainder.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{36.2} For each pair of integers $(a,b)$ in the previous problem, 
+	find integers $x$ and $y$ such that
+	$ax + by = \gcd(a,b)$.\\
+
+	\indent \textbf{a.} $\gcd(20,25)$\\
+	\indent \textbf{b.} $\gcd(0,10)$\\
+	\indent \textbf{c.} $\gcd123,123)$\\
+	\indent \textbf{d.} $\gcd(89,98)$\\
+	\indent \textbf{e.} $\gcd(54321,50)$\\
+	\indent \textbf{f.} $\gcd(1739,29341)$
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{36.14} Suppose $n$ and $m$ are relatively prime integers. 
+	Prove that $n$ and $m+jn$ are relatively
+	prime for any integer $j$.
+
+	Conclude that if $n$ and $m$ are relatively prime, and $m' = m \mod n$, 
+	then $n$ and $m'$ are relatively prime.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{36.15} Suppose that $a$ and $b$ are relatively prime integers and 
+	that $a|c$ and $b|c$. Prove that $(ab)|c$.
+\end{framed}
+
+\end{document}
