@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{flushright}
+	Name: \underline{\hspace{3cm}} \\
+	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Homework 14 \\
+	Due Tue. 4/4
+\end{flushright}
+
+%% Homework, 3rd Edition — 48.7, 48.11(c), 48.12, 48.14(g). 
+
+\begin{framed}
+	\textbf{48.7} Suppose that $G$ is a subgraph of $H$. Prove or disprove:\\
+	\indent \textbf{a.} $\alpha(G) \leq \alpha(H)$\\
+	\indent \textbf{b.} $\alpha(G) \geq \alpha(H)$\\
+	\indent \textbf{c.} $\omega(G) \leq \omega(H)$\\
+	\indent \textbf{d.} $\omega(G) \geq \omega(H)$
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{48.11(c)} Recall the definition of graph isomorphism from Exercise 47.21. 
+	We call a graph $G$ \textit{self-complementary} if $G$ is isomorphic to $\overline{G}$.
+
+	Definition of isomorphism from 47.21: 
+	We say that $G$ is isomorphic to $H$ provided there is a bijection $f: V(G) \rightarrow V(H)$ 
+	such that for all $a, b \in V(G)$ we have $a ~ b$ (in $G$) if and only if $f(a) ~ f(b)$ (in $H$). 
+	The function $f$ is called an isomorphism of $G$ to $H$.
+
+	\textbf{c.} Prove that if a self-complementary graph has $n$ vertices, then $[n] = [0]$ or $[n] = [1]$
+	in $Z/4Z$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{48.12} Find a graph $G$ on five vertices for which $\omega(G) < 3$ and $\omega(\overline{G}) < 3$. 
+	This shows that the number six in Proposition 48.13 is best possible.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{48.14(g)} Let $n, a, b \geq 2$ be integers. The notation $n \rightarrow (a,b)$ 
+	is an abbreviation for the following sentence:
+
+	Every graph $G$ on $n$ vertices has $\alpha(G) \geq a$ or $\omega(G) \geq b$.
+
+	For example, Proposition 48.13 says that if $n \geq 6$, then $n \rightarrow (3,3)$ is true. 
+	However, Exercise 48.12 asserts that $5 \rightarrow (3,3)$ is false.
+
+	\textbf{g.} Suppose $a,b \geq 3$.
+	If $n \rightarrow (a-1, b)$ and $m \rightarrow (a, b-1)$, then $(n+m) \rightarrow (a,b)$.
+\end{framed}
+
+\end{document}

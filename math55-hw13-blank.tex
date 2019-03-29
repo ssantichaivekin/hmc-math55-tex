@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{flushright}
+	Name: \underline{\hspace{3cm}} \\
+	MATH55 Section \underline{\hspace{0.5cm}} \\
+	Homework 13 \\
+	Due Tue. 4/2
+\end{flushright}
+
+% Graphs
+% Homework, 3rd Edition — 47.7, 47.12, 47.17, 47.21(d,e).
+
+\begin{framed}
+	\textbf{47.7} Imagine creating a map on your computer screen. 
+	This map wraps around the screen in the following way. A line that moves off the right side 
+	of the screen instantly reappears at the corresponding position on the left. 
+	Similarly, a line that drops off the bottom of the screen instantly reappears at the 
+	corresponding position at the top. Thus it is possible to have a country on this map 
+	that has a little section on the left and another little section on the right of the screen, 
+	but is still in one piece.\\
+
+	\noindent Devise such a computer-screen map that requires more than four colors.\\
+	Try to create such a map that requires seven colors! (It is possible.)
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{47.12} Recall the university examination-scheduling problem.
+	Create a list of courses and students such that more than four final 
+	examination periods are required.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{47.17} Let $G$ be an $r$-regular graph with $n$ vertices and $m$ edges. Find (and prove) a simple
+	algebraic relation between $r$, $n$, and $m$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+	\textbf{47.21 (d,e)} What does it mean for two graphs to be the same? Let $G$ and $H$ be graphs. 
+	We say that $G$ is isomorphic to $H$ provided there is a bijection $f: V(G) \rightarrow V(H)$ 
+	such that for all $a, b \in V(G)$ we have $a ~ b$ (in $G$) if and only if $f(a) ~ f(b)$ (in $H$). 
+	The function $f$ is called an isomorphism of $G$ to $H$.
+	We can think of $f$ as renaming the vertices of $G$ with the names of the vertices in $H$ in a way that 
+	preserves adjacency. Less formally, isomorphic graphs have the same drawing (except for the names of 
+	the vertices).\\
+
+	\textbf{d.} Give an example of two graphs that have the same number of vertices and the same number of 
+	edges but that are not isomorphic.\\
+
+	\includegraphics{hw13-graph-figure.png}
+
+	\textbf{e.} Let $G$ be the graph whose vertex set is $\{1, 2, 3, 4, 5, 6\}$. In this graph, there 
+	is an edge from $v$ to $w$ if and only if $v-w$ is odd. Let $H$ be the graph in the figure. 
+	Find an isomorphism $f: V(G) \rightarrow V(H)$.
+\end{framed}
+
+\end{document}
