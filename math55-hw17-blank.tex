@@ -1,0 +1,120 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{flushright}
+	Name: Santi Santichaivekin \\
+	MATH55 Section 3 \\
+	Homework 17 (Coloring) \\
+	Due Tue. 4/16
+\end{flushright}
+
+% Reading, 3rd Edition — (52) Coloring.
+% Homework, 3rd Edition — 52.8, 52.10, 52.11, 52.15.
+
+\begin{framed}
+	\textbf{52.8} Let $G$ be a graph with $n$ vertices. Prove that
+	$\chi(G) \geq \omega(G)$ and $\chi(G) \geq n/\alpha(G)$.
+\end{framed}
+
+\textbf{a.} The clique number of a graph $\omega(G)$ tells you about a largest
+clique in the graph.  Let $H$ be a clique subgraph of size $\omega(G)$ in $G$.
+We know that the chromatic number of the complete graph $H$ is $\omega(G)$, that is,
+$\chi(H) = \omega(G)$.
+Because $H$ is a subgraph of $G$, we have $\chi(G) \geq \chi(H)$. Therefore
+$\chi(G) \geq \omega(G)$.\\
+
+\textbf{b.} Let's consider a k-coloring of graph $G$ where $k = \chi(G)$. We partition the vertices of $G$ 
+by saying that two vertices are equal if they have the same coloring. For each vertex set in 
+the partition, $P_1, P_2, ..., P_k$. Since there cannot be an edge connecting vertices of the same 
+color, the induced graph of the complement of $G$ by any partition forms a clique. That is,
+$\overline{G}(P_1), \overline{G}(P_2), ..., \overline{G}(P_k)$ each forms a clique. 
+Furthermore, their clique number is equal to the number of vertices. 
+Since the graph 
+$\overline{G}$ is a supergraph of any of them, the clique number $\omega(\overline{G})$ must be 
+greater than or equal to the clique number of any subgraph $\overline{G}(P_1), \overline{G}(P_2), ..., \overline{G}(P_k)$.
+We have
+\begin{align*}
+	n   &= \sum^{\chi(G)}_{i}|P_i| \quad \text{: via the sum principle}\\
+		&= \sum^{\chi(G)}_{i}|V(\overline{G}(P_i))|\\
+		&= \sum^{\chi(G)}_{i}|\omega(\overline{G}(P_i))| \quad \text{: each partition froms a clique in } \overline{G}\\ 
+		&\leq \chi(G)\omega(\overline{G}) \quad \text{: the size of each clique is less than
+		the size of maximum clique}\\
+		&= \chi(G)\alpha(G) \quad : \omega(\overline{G}) = \alpha(G) \text{ by Proposition 48.12}
+\end{align*}
+Therefore $n \leq \chi(G)\alpha(G)$ so $\chi(G) \geq n/\alpha(G)$.
+
+\pagebreak
+
+\begin{framed}
+	\textbf{52.10} Let $G$ be a graph with $n$ vertices. Prove that 
+	$\chi(G)\chi(\overline{G}) \geq n$.
+\end{framed}
+
+From the first problem, we have $\chi(G) \geq \omega(G)$ and $\chi(G) \geq n/\alpha(G)$.
+Substituting $G$ in the second formula with $\overline{G}$ we get $\chi(\overline{G}) \geq n/\alpha(\overline{G})$.
+Since we know from Proposition 48.12 that $\alpha(\overline{G}) = \omega(G)$, we then have 
+$\chi(\overline{G}) \geq n/\omega(G)$. Multiplying this formula with $\chi(G) \geq \omega(G)$ gives 
+$\chi(G)\chi(\overline{G}) \geq n$.
+
+\pagebreak
+
+\begin{framed}
+	\textbf{52.11} Let $G$ be the seven-vertex graph in the figure.
+	Prove that $\chi(G) = 4$.
+
+	\includegraphics{hw17-graph-figure.png}
+\end{framed}
+
+In order to show that the minimum color we can use to color this graph is 4, it is suffice to 
+show that there is a 4-coloring for this graph, and that we cannot do 3 or lower coloring.\\
+
+The 4-coloring is provided in the figure, and we cannot do 3-coloring because there is a $K_3$
+subgraph inside the figure, namely $G({1, 2, 3})$. Furthermore, since we cannot do 3-coloring, 
+we cannot do any lower than 3.
+
+\pagebreak
+
+\begin{framed}
+	\textbf{52.15} Let $G$ be a graph with the property that $\delta(H) \leq d$
+	for all induced subgraph $H$ of $G$. Prove that $\chi(G) \leq d+1$.
+\end{framed}
+
+Let's say we have are given a graph $G$ with the property that $\delta(H) \leq d$
+for all induced subgraph $H$ of $G$. We will first prove that if we induce $G$ with 
+a set of one vertex $\{v_1\}$, we will have $\chi(G(\{v_1\})) \leq d+1$.
+Then, we show that if we induce it with a set of two vertices, we will have $\chi(G(\{v_1, v_2\})) \leq d+1$, 
+and so on.
+We repeat this, until we get the size of the inducing vertex set to be $|V(G)|$. At which point 
+we will have $\chi(G(V(G))) = \chi(G()) \leq d+1$ which is what we have set out to prove.\\
+
+\underline{Proof} by induction on $n$, the number of vertices we will use to induce on $G$.\\
+
+Base Case: Consider the case where we are inducing $G$ with one vertex $v_1$. 
+We only need one color for the one node, so $\chi(G(\{v_1\})) = 1$.
+Because there are no edges, so the degree is 0, so this satisfies $\chi(G(\{v_1\})) = 1 \leq d + 1$.\\
+
+Inductive Step: We assume that if we induce $G$ with $n=k$ vertices, let's call the inducing 
+set $V_k$, we will have $\chi(G(V_k)) \leq d+1$. We will have to show that if we induce 
+$G$ with a bigger set of $n=k+1$ vertices, let's call the inducing set $V_{k+1}$, we will have 
+$\chi(G(V_{k+1})) \leq d+1$.\\
+
+We attempt to show that $\chi(G(V_{k+1})) \leq d+1$ by showing that we can color it with a palette $d+1$ color.
+We will start We take a look at $G(V_{k+1})$, the graph $G$ induced with $k+1$ vertices. Let's look at the property of
+the graph $G$ that $\delta(H) \leq d$ for all induced subgraph $H$. From this, we always know 
+we have a vertex with degree less than or equal to $d$. Let's call that vertex $v$. Consider the 
+induced subgraph $G(V_{k+1}-v)$. It has $k$ vertices, so $G(V_{k+1}-v) \leq d+1$ by the inductive hypothesis.
+We take the color of everything except $v$ from the coloring shown to be exist by the inductive hypothesis.
+Now, we attach $v$ back with all the edges. Since $v$ are only adjacent to at most $d$ things and we have a palette of $d+1$ color,
+there will always be a color available for $v$. We color $v$ with the avaiable color and end up with a coloring for 
+$\chi(G(V_{k+1}))$ with $d+1$ color. Thus, we have $\chi(G(V_{k+1})) \leq d+1$.
+
+
+
+
+
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{flushright}
+    Name: \underline{\hspace{3cm}} \\
+        MATH55 Section \underline{\hspace{0.5cm}} \\
+        Homework 18 (Planar Graphs) \\
+	Due Thurs. 4/18
+\end{flushright}
+
+\begin{framed}
+    \textbf{53.7} For which values of $n$ is the $n$-cube $Q_n$ planar? Prove
+    your answer.\\
+
+    Definition of $Q_n$:\\
+    Let $n$ be a positive integer. The \textit{n-cube} is a graph, denoted $Q_n$,
+    whose vertices are the $2^n$ possible length-$n$ lists of 0s and 1s. For
+    example, the vertices of $Q_3$ are 000, 001, 010, 011, 100, 101, 110, and
+    111.\\
+    Two vertices of $Q_n$ are adjacent if their lists differ in exactly one
+    position. For example, in $Q_4$, vertices 1101 and 1100 are adjacent
+    (they differ only in their fourth element), but 1100 and 0110 are not
+    adjacent (they differ in positions 1 and 3).
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{53.8} The graph in the figure is known as \textit{Petersen's
+    Graph}. Prove that it is nonplanar by finding either a subdivision of
+    $K_5$ or a subdivision of $K_{3,3}$ as a subgraph.
+
+    \includegraphics[scale=0.25]{image1hw18}
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{53.12} A \textit{Platonic} graph is a connected planar graph
+    in which all vertices have the samee degree $r$ (with $3 \leq r \leq 5$)
+    and in whose crossing-free embedding all faces have the same degree $s$
+    (with $3 \leq s \leq 5$). Let $G$ be a platonic graph with $v$ vertices,
+    $e$ edges, and $f$ faces.
+
+    \textbf{a.} Prove that $vr=fs$. How is this quantity related to $e$?
+
+    \textbf{b.} Prove that if $r=s=3$, then $v=f=4$. Conclude that $K_4$ is
+    the only Platonic graph with $r=s=3$.
+
+    \textbf{c.} Prove that
+    \[e = \frac{2}{\frac{2}{r} + \frac{2}{s} - 1}\]
+
+    \textbf{d.} In all, there are nine ordered pairs $(r, s)$ with
+    $3 \leq r, s \leq 5$. Use the equation in part (c) to rule out
+    the existence of Platonic graphs with some of these values.
+
+    \textbf{e.} For the pairs $(r, s)$ that were not ruled out in part (d),
+    find a Platonic graph with vertex degree $r$ and face degree $s$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{53.13} A soccer ball is formed by stitching together pieces of
+    material that are regular pentagons and regular hexagons. The lengths
+    of the sides of these polygons are all the same, so the edges match up
+    exactly. Each corner of a polygon is the meeting place for exactly three
+    polygons.
+
+    Prove that there must be exactly 12 pentagons.
+\end{framed}
+
+\end{document}
+

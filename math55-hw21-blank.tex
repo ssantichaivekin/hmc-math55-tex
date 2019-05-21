@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{bbm}
+
+\begin{document}
+
+\begin{flushright}
+    Name: \underline{\hspace{3cm}}\\
+    Section: \underline{\hspace{0.5cm}}\\
+    Homework 21 (Posets)\\
+    Due Tue. 4/30
+\end{flushright}
+
+% 54.6, 55.8, 57.4, and 58.1
+
+\begin{framed}
+    \textbf{54.6} Prove that \textit{refines} is a partial order relation on
+    the set of all partitions of a set $A$.\\
+
+    Let $\mathcal{P}$ and $\mathcal{Q}$ be partitions of a set $A$. We say that
+    $\mathcal{P}$ \textit{refines} $\mathcal{Q}$ if every part in $\mathcal{P}$
+    is a subset of some part in $\mathcal{Q}$. We also say that $\mathcal{P}$
+    is \textit{finer} than $\mathcal{Q}$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{55.8} Let $P$ be a finite, nonempty poset. We know that $P$ must
+    have a minimal and a maximal element. Prove the following stronger
+    statement:
+
+    Let $P$ be a finite, nonempty poset. Prove that $P$ must contain a
+    minimal element $x$ and a maximal element $y$ with $x \leq y$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{57.4} Let $P = (X, \leq)$ be a finite poset that is not a total
+    order. Prove that $P$ contains incomparable elemnets $x$ and $y$ such that
+    \[ \leq' = \leq \cup \{(x, y)\} \]
+    is a partial order relation.
+
+    Such a pair of elements is called a \textit{critical pair}.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{58.1} Let $P$ be the poset in the following figure:\\
+    \includegraphics[height=1.5in]{image1hw21}
+
+    \textbf{a.} Find $d = \textrm{dim} P$.\\
+
+    \textbf{b.} Find a realizer of $P$ containing $d$ linear extensions.\\
+
+    \textbf{c.} Give an embedding of $P$ in $\mathbbm{R}^d$ (either via a
+    picture or by specifying coordinates).
+\end{framed}
+
+\end{document}
+

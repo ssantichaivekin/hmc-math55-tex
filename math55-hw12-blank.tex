@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{framed}
+\usepackage{bbm}
+
+\begin{document}
+
+\begin{flushright}
+    Name: \underline{\hspace{3cm}}\\
+    Section: \underline{\hspace{0.5cm}}\\
+    Homework 12\\
+    Due Thurs. 3/7
+\end{flushright}
+
+% Homework problems: 39.6, 39.17, 39.19, 39.20
+
+\begin{framed}
+    \textbf{39.6} Prove Lemma 39.3 by induction (or Well-Ordering Principle)
+    using Lemma 39.2.\\
+
+    \textbf{Lemma 39.3} Suppose $p,q_1,q_2,...,q_t$ are prime numbers. If
+    $p|(q_1q_2...q_t)$ then $p = q_i$ for some $1 \leq i \leq t$.\\
+
+    \textbf{Lemma 39.2} Suppose $a, b, p \in \mathbbm{Z}$ and $p$ is a prime. If
+    $p|ab$, then $p|a$ or $p|b$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{39.17} \textit{Euler's totient, continued} Suppose that $p$ and $q$
+    are unequal primes. Prove the following:\\
+    \textbf{a.} $\varphi(p) = p-1$.\\
+    \textbf{b.} $\varphi(p^2) = p^2-p$.\\
+    \textbf{c.} $\varphi(p^n) = p^n - p^{n-1}$ where $n$ is a positive integer.\\
+    \textbf{d.} $\varphi(pq) = pq - q - p - 1 = (p-1)(q-1)$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{39.19} \textit{Again with Euler's totient}. Now suppose $n$ is any
+    positive integer. Factor $n$ into primes as
+    $n = p_1^{a_1}p_2^{a_2}...p_t^{a_t}$ where the $p_i$s are distinct primes
+    and the exponents $a_i$ are all positive integers. Prove that the formulas
+    from the previous problem are valid for this general $n$.\\
+
+    Formula from the previous problem: If $n$ is a positive integer which can be
+    represented as the product of distinct primes, $p_1p_2...p_t$, then
+    $\varphi(n) = n(1-\frac{1}{p_1})(1-\frac{1}{p_2})...(1-\frac{1}{p_t})$.
+\end{framed}
+
+\pagebreak
+
+\begin{framed}
+    \textbf{39.20} Rewrite the second proof of Proposition 39.6 to show the
+    following:
+
+    Let $n$ be an integer. If $\sqrt{n}$ is not an integer, then there is no
+    rational number $x$ such that $x^2 = n$.
+\end{framed}
+
+\end{document}
+
